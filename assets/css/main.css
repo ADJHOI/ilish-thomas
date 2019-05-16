@@ -1,0 +1,79 @@
+html, body{
+    margin: 0px;
+    height: 0px;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+}
+
+h1{
+    font-family: "times new roman", serif;
+    font-weight: 100;
+    font-size: 40px;
+    margin: 0px;
+    padding: 10px 20px;
+}
+
+p{
+    margin: 0px;
+    font-family: "arial", sans-serif;
+}
+
+.title{
+    float: left;
+}
+
+#info{
+    cursor: pointer;
+    float: right;
+}
+
+#info:hover{
+    font-style: italic;
+}
+
+#descript{
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    top: 67px;
+    right: 0px;
+    padding: 0px 21px;
+    padding-bottom: 20px;
+    max-width: 400px;
+    height: calc(100vh - 87px);
+    overflow-y: scroll;
+    display: none;
+}
+
+#descript.active{
+    display: block;
+}
+
+.body-container{
+    position: relative;
+    margin-top: calc(100vh - 67px)
+}
+
+.italics{
+    font-style: italic;
+}
+
+#video{
+    margin: 20px 21px;
+    margin-top: 0px;
+/*    padding: 10px;*/
+    height: 0px;
+    background: black;
+    width: calc(100vw - 42px);
+    height: calc(100vh - 87px);
+/*    min-height: 701px;*/
+/*    min-height: 501px;*/
+}
