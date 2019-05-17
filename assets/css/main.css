@@ -12,6 +12,7 @@ html, body{
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
+    background: #000000;
 }
 
 h1{
@@ -20,29 +21,64 @@ h1{
     font-size: 40px;
     margin: 0px;
     padding: 10px 20px;
+    color: #ffffff;
 }
 
 p{
     margin: 0px;
     font-family: "arial", sans-serif;
+    color: #ffffff;
+}
+
+.body-container{
+    position: relative;
+    margin-top: calc(100vh - 67px);
+    z-index: 2;
 }
 
 .title{
     float: left;
 }
 
+#scroll{
+    cursor: pointer;
+    position: fixed;
+    right: 0px;
+    bottom: 7px;
+    font-size: 35px;
+    opacity: 1;
+    z-index: 1;
+    -webkit-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+}
+
+#scroll:hover{
+    opacity: 0.3;
+}
+
 #info{
     cursor: pointer;
     float: right;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#info.active{
+    opacity: 1;
+    visibility: visible;
 }
 
 #info:hover{
     font-style: italic;
+    padding-left: 23px;
 }
 
 #descript{
     position: absolute;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 5;
     top: 67px;
     right: 0px;
     padding: 0px 21px;
@@ -57,9 +93,13 @@ p{
     display: block;
 }
 
-.body-container{
-    position: relative;
-    margin-top: calc(100vh - 67px)
+#descript::-webkit-scrollbar{
+    display: block;
+    width: 3px;
+}
+
+#descript::-webkit-scrollbar-thumb {
+  background: #ffffff; 
 }
 
 .italics{
@@ -67,8 +107,9 @@ p{
 }
 
 #video{
-    margin: 20px 21px;
-    margin-top: 0px;
+    position: relative;
+    padding: 20px 21px;
+    padding-top: 0px;
 /*    padding: 10px;*/
     height: 0px;
     background: black;
@@ -76,4 +117,5 @@ p{
     height: calc(100vh - 87px);
 /*    min-height: 701px;*/
 /*    min-height: 501px;*/
+    z-index: 3;
 }
