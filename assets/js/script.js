@@ -1,5 +1,10 @@
 $("#info").click(function(event){
     $("#descript").toggleClass("active");
+    if ($("#descript").hasClass("active")){
+        $("#sign").html("×")
+    } else {
+        $("#sign").html("+")
+    }
 });
 
 $(document).scroll(function(){
@@ -9,8 +14,8 @@ $(document).scroll(function(){
     } else {
         $("#info").removeClass("active");
         $("#descript").removeClass("active");
-    }
-    
+        $("#sign").html("+")
+    }  
 });
 
 $("#scroll").click(function(event){
