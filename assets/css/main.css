@@ -8,10 +8,6 @@ html, body{
     -webkit-text-size-adjust: none;
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
-    text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-    -moz-text-size-adjust: none;
     background: #000000;
 }
 
@@ -20,7 +16,7 @@ h1{
     font-weight: 100;
     font-size: 40px;
     margin: 0px;
-    padding: 10px 20px;
+    padding: 10px 25px;
     color: #ffffff;
 }
 
@@ -28,6 +24,8 @@ p{
     margin: 0px;
     font-family: "arial", sans-serif;
     color: #ffffff;
+    text-indent: 2.5em;
+    line-height: 20px;
 }
 
 .body-container{
@@ -36,15 +34,23 @@ p{
     z-index: 2;
 }
 
+.footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
 .title{
     float: left;
+    position: absolute;
+    bottom: 10px;
 }
 
 #scroll{
     cursor: pointer;
     position: fixed;
-    right: 0px;
-    bottom: 7px;
+    right: 5px;
+    bottom: 15px;
     font-size: 35px;
     opacity: 1;
     z-index: 1;
@@ -75,22 +81,27 @@ p{
     padding-left: 23px;
 }
 
-#descript{
-    position: absolute;
-    background: rgba(0, 0, 0, 0.9);
-    z-index: 5;
-    top: 67px;
-    right: 0px;
-    padding: 0px 21px;
-    padding-bottom: 20px;
-    max-width: 400px;
-    height: calc(100vh - 87px);
-    overflow-y: scroll;
-    display: none;
+.info{
+    display: flex;
+    display: -webkit-flex;
+    position: relative;
+    padding: 25px 25px;
+    width: calc(100vw - 50px);
+    height: auto;
+    background: black;
 }
 
-#descript.active{
-    display: block;
+#descript{
+    max-width: 500px;
+    overflow-y: scroll;
+    float: left;
+    margin-right: 20px
+}
+
+.footnotes{
+    font-size: 0.9em;
+    float: left;
+    max-width: 326px;
 }
 
 #descript::-webkit-scrollbar{
@@ -108,14 +119,13 @@ p{
 
 #video{
     position: relative;
-    padding: 20px 21px;
-    padding-top: 0px;
-/*    padding: 10px;*/
+    padding: 25px 25px;
+    padding-bottom: 0px;
+    margin-bottom: -5px;
+    margin-top: 100vh;
     height: 0px;
-    background: black;
-    width: calc(100vw - 42px);
-    height: calc(100vh - 87px);
-/*    min-height: 701px;*/
-/*    min-height: 501px;*/
+    background: transparent;
+    width: calc(100vw - 50px);
+    height: calc(100vh - 50px);
     z-index: 3;
 }
