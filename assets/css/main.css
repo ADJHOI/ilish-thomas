@@ -38,6 +38,10 @@ p{
     line-height: 20px;
 }
 
+.italics{
+    font-style: italic;
+}
+
 .body-content{
     position: relative;
     margin-top: calc(100vh);
@@ -107,15 +111,23 @@ p{
 }
 
 .descript{
-/*    display: block;*/
     max-width: 500px;
     float: left;
     margin-right: 35px;
 }
 
+.fade{
+    opacity: 1;
+    transition: opacity 0.25s;
+}
+
+.fade.active{
+    opacity: 0.5;
+}
+
 .citation{
     cursor: pointer;
-    opacity: 0.75;
+    opacity: 0.5;
     transition: opacity 0.25s;
 }
 
@@ -124,37 +136,34 @@ p{
     text-decoration: underline;
 }
 
+#citation-1.active, #citation-2.active, #citation-3.active, #citation-4.active{
+    text-decoration: underline;
+}
+
+#one, #two, #three, #four{
+    display: none;
+}
+
+#one.active, #two.active, #three.active, #four.active{
+    display: block;
+}
+
 .footnotes-container{
-    position: relative;
     width: 325px;
 }
 
 .footnotes{
-    position: absolute;
-    bottom: 0px;
-    counter-reset: footnote-counter;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20px;
 }
 
 .footnotes p{
-/*    cursor: pointer;*/
     font-size: 14px;
     line-height: 16px;
     text-indent: 0;
-/*    transition: opacity 0.25s;*/
 }
 
-.footnotes p::before{
-    counter-increment: footnote-counter;
-    content: counter(footnote-counter) ".";
-    margin-right: 0.9em;    
-}
-
-/*
-.footnotes p:hover{
-    opacity: 0.25;
-}
-*/
-
-.italics{
-    font-style: italic;
+.counter{
+    margin-right: 1.2em;
 }
