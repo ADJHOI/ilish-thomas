@@ -93,7 +93,16 @@ $(".close").click(function(event){
     $(this).parent().removeClass("active");
 //    $(this).parent().prev().children().removeClass("active")
 });
-            
+
+$(window).resize(function(event){
+    if ($(window).width() > 699){
+        $("#mobile-1").removeClass("active");
+        $("#mobile-2").removeClass("active");
+        $("#mobile-3").removeClass("active");
+        $("#mobile-4").removeClass("active");
+    }
+});
+
 $(function () {
     var touch = 'ontouchstart' in document.documentElement
                 || navigator.maxTouchPoints > 0
