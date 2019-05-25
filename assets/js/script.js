@@ -15,50 +15,50 @@ $(document).scroll(function(event){
 
 $("#counter-1").hover(function(event){
     if ($(window).width() > 699){
-        $("#citation-1").addClass("active");
+//        $("#citation-1").addClass("active");
         $("#one").addClass("active");
     }
 }, function(event){
     if ($(window).width() > 699){
-        $("#citation-1").removeClass("active");
+//        $("#citation-1").removeClass("active");
         $("#one").removeClass("active");
     }
 });
 
 $("#counter-1").click(function(event){
     if ($(window).width() < 700){
-        $("#citation-1").toggleClass("active");
+//        $("#citation-1").toggleClass("active");
         $("#mobile-1").toggleClass("active");  
     }
 });
             
 $("#counter-2").hover(function(event){
     if ($(window).width() > 699){
-        $("#citation-2").addClass("active");
+//        $("#citation-2").addClass("active");
         $("#two").addClass("active");
     }
 }, function(event){
     if ($(window).width() > 699){
-        $("#citation-2").removeClass("active");
+//        $("#citation-2").removeClass("active");
         $("#two").removeClass("active");
     }
 });
 
 $("#counter-2").click(function(event){
     if ($(window).width() < 700){
-        $("#citation-2").toggleClass("active");
+//        $("#citation-2").toggleClass("active");
         $("#mobile-2").toggleClass("active");  
     }
 });
 
 $("#counter-3").hover(function(event){
     if ($(window).width() > 699){
-        $("#citation-3").addClass("active");
+//        $("#citation-3").addClass("active");
         $("#three").addClass("active");
     }
 }, function(event){
     if ($(window).width() > 699){
-        $("#citation-3").removeClass("active");
+//        $("#citation-3").removeClass("active");
         $("#three").removeClass("active");
     }
 });
@@ -72,26 +72,26 @@ $("#counter-3").click(function(event){
 
 $("#counter-4").hover(function(event){
     if ($(window).width() > 699){
-        $("#citation-4").addClass("active");
+//        $("#citation-4").addClass("active");
         $("#four").addClass("active");
     }
 }, function(event){
     if ($(window).width() > 699){
-        $("#citation-4").removeClass("active");
+//        $("#citation-4").removeClass("active");
         $("#four").removeClass("active");
     }
 });
 
 $("#counter-4").click(function(event){
     if ($(window).width() < 700){
-        $("#citation-4").toggleClass("active");
+//        $("#citation-4").toggleClass("active");
         $("#mobile-4").toggleClass("active");  
     }
 });
 
 $(".close").click(function(event){
     $(this).parent().removeClass("active");
-    $(this).parent().prev().children().removeClass("active")
+//    $(this).parent().prev().children().removeClass("active")
 });
             
 $(function () {

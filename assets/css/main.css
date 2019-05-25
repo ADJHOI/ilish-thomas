@@ -137,12 +137,14 @@ p{
 
 .citation:hover{
     opacity: 1;
-    text-decoration: underline;
+/*    text-decoration: underline;*/
 }
 
+/*
 #citation-1.active, #citation-2.active, #citation-3.active, #citation-4.active{
     text-decoration: underline;
 }
+*/
 
 #one, #two, #three, #four{
     display: none;
