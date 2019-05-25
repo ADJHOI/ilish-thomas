@@ -1,0 +1,37 @@
+@media only screen and (max-width: 699px){
+    .video-container{
+        padding-top: 15px;
+        padding-bottom: 56.26%;
+        height: 0;
+    }
+    
+    #video{
+        left: 25px;
+        width: calc(100% - 50px);
+        height: calc(100% - 45px);
+        z-index: 3;
+    }
+    
+    .info{
+        margin-top: -25px;
+    }
+    
+    .descript{
+        max-width: 100%;
+        margin-right: 0px;
+    }
+    
+    .footnotes-container{
+        display: none;
+    }
+    
+    #mobile-1.active, #mobile-2.active, #mobile-3.active, #mobile-4.active{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 524px){
+    .mobile-break{
+        display: block
+    }
+}

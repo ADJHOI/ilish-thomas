@@ -66,6 +66,10 @@ p{
     bottom: 10px;
 }
 
+.mobile-break{
+    display: none;
+}
+
 #scroll{
     cursor: pointer;
     position: fixed;
@@ -127,7 +131,7 @@ p{
 
 .citation{
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.6;
     transition: opacity 0.25s;
 }
 
@@ -158,10 +162,32 @@ p{
     top: 20px;
 }
 
-.footnotes p{
+.footnotes p, .mobile-footnote p{
     font-size: 14px;
     line-height: 16px;
     text-indent: 0;
+}
+
+.mobile-footnote{
+    display: none;
+    margin: 15px 33px;
+    margin-right: 0px;
+}
+
+#mobile-1.active, #mobile-2.active, #mobile-3.active, #mobile-4.active{
+    display: none;
+}
+
+.close{
+    cursor: pointer;
+    opacity: 0.6;
+    margin-top: 5px;
+    transition: opacity 0.25s;
+/*    margin-left: 1.9em;*/
+}
+
+.close:hover{
+    opacity: 1;
 }
 
 .counter{
